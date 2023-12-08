@@ -1,0 +1,24 @@
+<%- include('header') %>
+<div class="box heading">
+  <h1><%= listName %></h1>
+</div>
+<div class="box">
+  <div class="typehere">
+    <form class="item" action="/" method="post">
+      <input type="text" name="newItem" placeholder="Type your to-do here..." autocomplete="off" required>
+      <button class="pplus" type="submit" name="list" value=<%= listName %>><i class="fa-sharp fa-plus fa-xs"></i></button>
+    </form>
+  </div>
+
+  <% newListItems.forEach(function(item, i) { %>
+  <div class="item">
+    <input type="checkbox">
+    <p><%= item %></p>
+    <form class="delete-form" action="/delete" method="post">
+      <input type="hidden" name="index" value="<%= i %>">
+      <button class="delete-item" name="list" value="<%= listName %>" type="submit"><i class="fas fa-trash-alt fa-xs"></i></button>
+    </form>
+  </div>
+  <% }); %>
+</div>
+<%- include('footer') %>
