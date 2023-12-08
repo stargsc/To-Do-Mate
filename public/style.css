@@ -1,0 +1,305 @@
+/* Set background color and font family for the entire page */
+html {
+  background-color: #cfe2ff;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Header styles */
+h1 {
+  color: #fff;
+  padding: 13px;
+  font-size: 1.7rem;
+}
+
+/* Main content container */
+.box {
+  max-width: 60rem;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading styles */
+.heading {
+  background-color: #084298;
+  text-align: center;
+  max-width: 25rem;
+}
+
+/* Input field styles */
+.typehere {
+  border-radius: 5px;
+  box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.3);
+}
+
+/* List item styles */
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  justify-content: space-between;
+}
+
+/* Hover effect on list items */
+.item:hover {
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+}
+
+/* Delete item button styles */
+.delete-item {
+  border: none;
+  background-color: transparent;
+  color: #e35252;
+  transition: color 0.2s;
+}
+
+/* Hover effect on delete item button */
+.delete-item:hover {
+  color: #ff0000;
+}
+
+/* Plus button styles */
+.pplus:hover {
+  background-color: #520dc2;
+  transition: color 0.2s;
+}
+
+/* Remove border-bottom from the last list item */
+.item:last-child {
+  border-bottom: 0;
+}
+
+/* Apply line-through style to text when checkbox is checked */
+input:checked + p {
+  text-decoration: line-through;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  margin: 1rem;
+}
+
+/* Paragraph text styles */
+p {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 20px;
+  color: #00204a;
+}
+
+/* Form styles */
+form {
+  text-align: center;
+  padding-left: 1rem;
+}
+
+/* Button styles */
+button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #084298;
+  color: #fff;
+  font-size: 30px;
+  border-width: 0;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+/* Input text styles */
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  width: 52rem;
+}
+
+/* Focus style for input text */
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #084298;
+}
+
+/* Placeholder text styles */
+::placeholder {
+  color: #B4B4B3;
+}
+
+/* Footer styles */
+footer {
+  flex: 0 0 auto;
+  color: #084298;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: 'PT Serif', serif;
+}
+
+/* Footer content styles */
+.foot {
+  margin-top: 3rem;
+}
+
+/* Footer link styles */
+.footer-link {
+  display: inline-block;
+  color: #084298;
+  margin: 0 0.2rem 0.4rem;
+  transition: 0.5s;
+}
+
+/* Hover effect on footer links */
+footer .foot a:hover {
+  transform: translateY(-15px);
+  color: #520dc2;
+}
+
+/*----------bootstrap-navbar-css------------*/
+.navbar-mainbg {
+  padding: 0;
+}
+
+.navbarSupportedContent {
+  overflow: hidden;
+  position: relative;
+}
+
+.navbarSupportedContent ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navbarSupportedContent ul li a i {
+  margin-right: 10px;
+}
+
+.navbarSupportedContent li {
+  list-style-type: none;
+  float: left;
+}
+
+.navbarSupportedContent ul li a {
+  color: #084298;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 20px 20px;
+  position: relative;
+}
+
+.nav-link:hover {
+  background-color: #e4e9fd;
+  border-radius: 1rem;
+  transition: background-color 0.2s;
+}
+
+.navbarSupportedContent a:not(:only-child):after {
+  content: "\f105";
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-custom {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-custom .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-custom .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+
+  input[type="checkbox"] {
+    margin: 1rem;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbarSupportedContent ul li a {
+    padding: 12px 30px;
+  }
+
+  .hori-selector {
+    margin-top: 0;
+    margin-left: 10px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .hori-selector .left,
+  .hori-selector .right {
+    right: 10px;
+  }
+
+  .hori-selector .left {
+    top: -25px;
+    left: auto;
+  }
+
+  .hori-selector .right {
+    bottom: -25px;
+  }
+
+  .hori-selector .left:before {
+    left: -25px;
+    top: -25px;
+  }
+
+  .hori-selector .right:before {
+    bottom: -25px;
+    left: -25px;
+  }
+
+  input[type="text"] {
+    width: 16rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+
+  ::placeholder {
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+
+  input[type="checkbox"] {
+    margin: 1rem;
+  }
+
+  button.pplus {
+    width: 40px;
+    height: 40px;
+  }
+}
